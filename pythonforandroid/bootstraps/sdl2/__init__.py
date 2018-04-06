@@ -94,7 +94,6 @@ class SDL2GradleBootstrap(Bootstrap):
 
                     info('Deleting some other stuff not used on android')
                     # To quote the original distribute.sh, 'well...'
-                    shprint(sh.rm, '-rf', 'lib2to3')
                     shprint(sh.rm, '-rf', 'idlelib')
                     for filename in glob.glob('config/libpython*.a'):
                         shprint(sh.rm, '-f', filename)
